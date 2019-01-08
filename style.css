@@ -110,10 +110,7 @@ nav a:hover {
   display: flex;
   justify-content: space-between;
   align-content: center;
-}
-
-.intro div {
-  flex: 1;
+  flex-wrap: wrap;
 }
 
 .intro .cta {
@@ -129,13 +126,10 @@ nav a:hover {
   font-weight: 600;
 }
 
-
-
 .intro img {
   width: 100%;
   filter: grayscale(100%);
 }
-
 
 #students ul {
   display: flex;
@@ -189,5 +183,9 @@ nav a:hover {
   .container {
     max-width: 728px;
     margin: 0 auto;
+  }
+
+  .intro div {
+    width: 50%;
   }
 }
