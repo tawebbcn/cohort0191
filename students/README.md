@@ -1,6 +1,6 @@
 # How to work with this web 🤔
 
-- Put in this folder your own HTML and your CSS.
-- Please name the files with your name : francesca.html and francesca.css.
+- Create in this folder your own folder witch will contain your HTML and your CSS.
+- Please name the folder with your name : francesca 📁 --> index.html & styles.css.
 
-**DO NOT touch the index.html, thanksss 😬**
+**DO NOT touch the main index.html, thanksss 😬**
