@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Ranieri's Personal Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <!--Open Graph: make it easy for social media posting of your website-->
-    <meta property="og:title" content="Ranieri Galasso"/>
+    <meta property="og:title" content="Ranieri Galasso" />
     <meta property="og:description" content="A personal page of Ranieri Galasso, describing his professional life."/>
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website" />
     <meta property="og:image" content="https://scontent.fmad3-5.fna.fbcdn.net/v/t1.0-9/28278993_10156355867434090_706028108353462505_n.jpg?_nc_cat=106&_nc_ht=scontent.fmad3-5.fna&oh=b7f073db18a6af9e841c22354090f531&oe=5CCB622E"/>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Ranieri Galasso</h1>
-        <h2>Future Full-Stack Developer</h2>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Ranieri Galasso</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#section2">About Me</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Exercises</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Message Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://ranierigalasso.github.io/cohort0191/">Go Back</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-
     <main>
-        <section itemscope itemtype ="http://schema.org/Person">
-            <img src="Ranieri.jpg" alt="Ranieri Galasso's Photo" width="300" height="200">
+      <section class="section1" itemscope itemtype="http://schema.org/Person">
+        <h2>Hi there, I Am Ranieri Galasso! <br> Not Your Average Full Stack Developer</h2>
+        <img src="landing.jpg" alt="Ranieri Galasso's Photo" width="300" height="200"/>
+      </section>
+      <section class="section2">
+        <img src="Ranieri.jpg" alt="Ranieri Galasso's Photo" width="300" height="200"/>
+        <div>
             <h2>About Me</h2>
             <p>
-                My name is Ranieri Galasso, I am Italian from Rome. I have a background in the financial industry. I am currently
-                a student at IronHack to become a full stack developer. My long-term goal is to have a remote job as a developer and be
-                able to have a flexible lifestyle.
+              My name is Ranieri Galasso, I am Italian from Rome. I have a
+              background in the financial industry. I am currently a student at
+              IronHack to become a full stack developer. My long-term goal is to
+              have a remote job as a developer and be able to have a flexible
+              lifestyle.
             </p>
-        </section>
-        <section>
-            <h2>Exercises</h2>
-            <ul>
-                <li>Learn the basics of HTML 5</li>
-                <li>Learn advanced concepts of HTML 5</li>
-                <li>Learn CSS</li>
-                <li>Learn Node</li>
-                <li>Learn React</li>
-            </ul>
-        </section>
+        </div>
+      </section>
+      <section class="section3">
+        <h2>Exercises</h2>
+        <ul>
+          <li><a href="#"> Learn the basics of HTML 5</a></li>
+          <li><a href="#">Learn advanced concepts of HTML 5</a></li>
+          <li><a href="#">Learn CSS</a></li>
+          <li><a href="#">Learn Node</a></li>
+          <li><a href="#">Learn React</a></li>
+        </ul>
+      </section>
     </main>
-
     <footer>
-        <h2>Comment</h2>
-        <form>
-            <textarea placeholder="Write your comment here..." name="textarea" cols="40" rows="10" style="border:solid 1px black;"></textarea>
-            <br>
-            <input type="submit" value="Submit">
-        </form>
+      <h2>Comment</h2>
+      <form>
+        <textarea placeholder="Write your comment here..." name="textarea" cols="40" rows="10" style="border:solid 1px black;"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
     </footer>
-
-</body>
+  </body>
 </html>
