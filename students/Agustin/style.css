@@ -17,7 +17,7 @@ body {
 
 body {
   color: #111;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 147%;
 }
@@ -90,10 +90,28 @@ section.testimonials .button {
 #header{
   display:flex;
   justify-content: center;
+  margin-top: 5rem;
 }
+
+
 
 #about-me{
   text-align: center;
+}
+#about-me h3{
+  color:#ff4d4d;
+}
+#about-me p{
+  margin:0 1rem;
+}
+
+hr{
+  width:50%;
+ 
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ff4d4d;
+     
 }
 #contact-me{
   text-align: center;
@@ -105,4 +123,7 @@ section.testimonials .button {
   justify-content: space-around;
   list-style: none;
   padding:0;
+}
+.icon-links a{
+  color:#ff4d4d;
 }
