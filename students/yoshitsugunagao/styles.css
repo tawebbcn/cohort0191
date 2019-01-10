@@ -1,9 +1,14 @@
+
+
 body {
   margin: 0;
   padding: 0;
   /* background-color: powderblue; */
   font-family: 'Montserrat', sans-serif;
 }
+
+/* ---header--- */
+
 header{
   background-color:#343434;
   color:white;
@@ -31,6 +36,8 @@ header p{
   max-width: 300px;
 }
 
+/* ---main--- */
+
 .section-container{
 
   margin: 0 10%;
@@ -45,7 +52,7 @@ header p{
 
 }
 
-
+/* ---footer--- */
 
 #comment{
   border: 1px solid gray;
@@ -82,6 +89,7 @@ footer{
   border-top: 1px solid;
   margin-top: 10px;
 }
+
 
 .follow-me{
   float: right;
