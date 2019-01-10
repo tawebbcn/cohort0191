@@ -23,6 +23,7 @@ header {
 
 .title {
   float: left;
+  padding: 10px;
 }
 
 .menu {
