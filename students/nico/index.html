@@ -5,7 +5,8 @@
   <title>Nico's Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Raleway:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">  
   <meta property="og:title" content="myWebPage">
   <meta property="og:type" content="website">
   <meta property="og:url" content="file:///Users/nicolacaze/Desktop/Ironhack/m1/w1/myPersoPage/index.html">
@@ -13,36 +14,53 @@
 </head>
 
 <body>
-  <header>
-    <h1>Nicolas Lacaze</h1>
-    <h2>Full stack developer</h2>
+  <header class="header-container">
+    <a href="https://tawebbcn.github.io/cohort0191"><img class="header-container-item" src="img/left-arrow.png" alt="back-arrow"></a>
+    <nav class="header-container-item">
+      <ul class="nav-list-container">
+        <li class="nav-list-items"><a href="#about"/>Me</a></li>
+        <li class="nav-list-items"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-list-items"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-  
   <main>
-    <section><img src="img/dduck.png" alt="my-picture"/></section>
-    <section>
+    <section class="intro">
+      <div class="center-box">
+        <div class="center-box-side">
+            <p class="left-side">I am Nico</p>
+        </div>
+        <div class="center-box-side">
+            <p class="right-side">And I code</p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section-container about-me">
         <h3>About me</h3>
         <p>I am a French guy who speaks English with no strong accent. <br>
-          Yes I like cheese but who does not ? I am an Ironhacker since this morning. <br>
-          I love HTML!
+          Yes I like cheese but who does not ? I am a proud Ironhacker. <br>
+          I love flex-box!
         </p>
       </section>
-      <section>
-        <h3>Exercises</h3>
-        <ul>
-          <li> <a href="#">Create a webpage</a></li>
-          <li>Eat as many sandwiches as you can</li>
-          <li>Be friend with the dog</li>
+      <section id="portfolio" class="section-container portfolio">
+        <h3>Portfolio</h3>
+        <ul class="portolio-item-container">
+          <li class="portfolio-item"><a href="#">Create a webpage</a></li>
+          <li class="portfolio-item"><a href="#">Clone Slack</a></li>
+          <li class="portfolio-item"><a href="#">Functions scope</a></li>
         </ul>
       </section>
-      <footer>
-        <h3>Comment</h3>
+      <section id="contact" class="section-container">
+        <h3>Contact me</h3>
         <form action=""> 
-          <label for="comment">Leave a comment</label>
-            <textarea id="comment" rows="5" cols="50" placeholder="Leave a comment here"></textarea> <br>
-            <input type="submit" value="Submit">
+          <label for="comment">Type your message</label>
+            <textarea id="comment" rows="5" cols="50" placeholder="Leave a message"></textarea> <br>
+            <input class="submit-btn" type="submit" value="Submit">
         </form>
-      </footer>
+      </section>
   </main>
+  <footer>
+    <p>Made with love and no papyrus font.</p>
+  </footer>
 </body>
 </html>

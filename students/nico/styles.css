@@ -1,0 +1,187 @@
+
+/* ---- reset ---- */
+
+* {
+  /* border: 1px solid black; */
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/* ---- typography ---- */
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: #011638;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.center-box-side p {
+  height: 100%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  
+}
+
+/* ---- layout ---- */
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.nav-list-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* ---- components ---- */
+.nav-list-container li {
+  list-style: none;
+  margin: 5px;
+}
+
+.nav-list-container li>a {
+  text-decoration: none;
+  list-style: none;
+  color: #011638;
+  text-transform: uppercase;
+}
+
+.header-container img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 20px;
+}
+
+.section-container textarea {
+  margin-top: 10px;
+  border: 1px solid #141414;
+  width: 100%;
+}
+
+.submit-btn {
+  width: 100px;
+  background: #0D21A1;
+  color: #EEF0F2;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 5%;
+  text-align: center;
+  position: relative;
+  left:33%;
+}
+
+
+/* ---- section ---- */
+.intro {
+  background: url("../myPersoPage/img/georgie-cobbs-467923-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+}
+
+.center-box {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 2%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.center-box-side {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+
+.center-box-side:first-child {
+  background: #EEF0F2;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.center-box-side:last-child {
+  background: #141414;
+  color: #EEF0F2;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+.section-container {
+  margin: 10px 20px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  background: #EEC643;
+}
+
+.portfolio-item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item {
+  width: 200px;
+  list-style: none;
+  background: #141414;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2%;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+  color: #EEF0F2;
+}
+
+footer {
+  background: #141414;
+  color: #EEF0F2;
+  text-align: center;
+  height: 100%;
+}
+
+footer p {
+  margin: 10px 20px;
+  
+}
