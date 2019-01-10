@@ -12,7 +12,6 @@ body {
   padding: 0;
 }
 
-
 /* ---- typography ---- */
 
 body {
@@ -21,9 +20,6 @@ body {
   font-size: 16px;
   line-height: 147%;
 }
-
-
-
 
 /* ---- layout ---- */
 
@@ -59,9 +55,6 @@ body {
   }
 }
 
-
-
-
 /* ---- components ---- */
 
 .button {
@@ -75,21 +68,16 @@ body {
   color: blue;
   background-color: #fff;
 }
+
 a{
   color:#bc007b;
 }
-/* ---- section ---- */
 
-section.testimonials {
-  
-}
+/* ---- section ---- */
 
 section.testimonials .button {
   margin-bottom: 10px;
 }
-
-
-
 
 /************************/
 #header{
@@ -107,10 +95,12 @@ section.testimonials .button {
   color:#ff4d4d;
 
 }
+
 .my_image{
   width:15%;
   min-width:120px;
 }
+
 .my_image img{
   width: 100%;
   border-radius:15%;
@@ -119,10 +109,12 @@ section.testimonials .button {
 #about-me{
   text-align: center;
 }
+
 #about-me h3{
     color:#bc007b;
   
 }
+
 #about-me p{
   margin:0 1rem;
 }
@@ -135,10 +127,10 @@ hr{
     border-top: 1px solid #bc007b;
      
 }
+
 #contact-me{
   text-align: center;
 }
-
 
 .icon-links{
   display:flex;
