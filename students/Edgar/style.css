@@ -1,0 +1,269 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 182px 0;
+  background-color: #2b2f30;
+}
+
+.title {
+  text-align: center;
+  border-bottom: 2px solid #33c3fe;
+  cursor: pointer;
+  margin-top:80px;
+  padding-bottom:5px;
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.title a {
+  color: #fff;
+}
+
+.title:hover a {
+  color: #33c3fe;
+}
+
+.title:hover + .part .hex2 > div {
+  width: 100%;
+  height:115%;
+  background-image: url('pers.jpg');
+  background-position: center;
+  background-size: cover;
+  transform: rotate(-90deg);
+}
+
+.part {
+  transform: rotate(90deg);
+  width: 400px;
+}
+
+.hexa, .hexa div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+}
+
+.hexa {
+  width: 425px;
+  height: 330px;
+}
+
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+
+.hexa {
+  transform: rotate(120deg);
+}
+
+.hex1 {
+  transform: rotate(-60deg);
+}
+
+.hex2 {
+  transform: rotate(-60deg);  
+}
+
+.hex2 > div {
+  width: 100%;
+  height:115%;
+  background-image: url('pic.png');
+  background-position: center;
+  background-size: cover;
+  transform: rotate(-90deg);
+  -webkit-transition: background-image 1s;
+  -moz-transition: background-image 1s;
+  -o-transition: background-image 1s;
+  transition: background-image 1s;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---- typography ---- */
+
+body {
+  color: rgb(50, 50, 50);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 5px; 
+  margin: 0px 0 85px;
+}
+
+p {
+  margin: 0;
+}
+
+/* ---- layout ---- */
+
+#site-header {
+  padding: 30px 0 27px;
+  color: rgb(50, 50, 50);
+  background: rgb(254, 254, 254);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 20px #2dc4fe;
+  top: 0;
+  z-index: 10;
+}
+
+#site-header h1 {
+  text-transform: uppercase;
+  color: #33c3fe;
+}
+
+#site-footer {
+  color: white;
+  padding: 18px 0;
+  text-align: center;
+  background: #2b2f30;
+}
+
+#site-main {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+nav {
+  padding-top: 20px;
+}
+
+nav ul {
+  margin: 0 auto;
+  min-width: 200px;
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+}
+
+nav a {
+  color: rgb(50, 50, 50);
+}
+
+nav a:hover {
+  color: #33c3fe;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.intro .cta {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  line-height: 35px;
+  padding: 20px 40px
+}
+
+.intro p {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.intro img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+#projects {
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projects ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+}
+
+#projects li {
+  list-style: none;
+  background-color: rgb(254, 254, 254);
+  box-shadow: 1px 0px 8px #d7d7d7;
+  margin: 10px;
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#projects a {
+  color:  rgb(43, 43, 43);
+}
+
+#projects li a {
+  padding:36%;
+}
+
+#projects li:hover {
+  background-color: #33c3fe;
+}
+
+#projects li:hover a {
+  color: white;
+}
+  
+  @media (min-width: 768px) {
+    #projects ul {
+      width: 728px;
+    }
+    #projects li {
+      margin: 25px 25px;
+    }
+  }
+  
