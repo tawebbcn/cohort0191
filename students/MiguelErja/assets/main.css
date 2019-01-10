@@ -7,6 +7,10 @@ html {
   box-sizing: inherit;
 }
 
+li{
+  list-style: none;
+}
+
 /* ---- typography ---- */
 
 body {
@@ -127,7 +131,7 @@ html{
 }
 
 .list-link{
-  padding: 10rem 50% 10rem 50%;
+  padding: 10rem 100% 10rem 100%;
 }
 
 /* Footer */
@@ -181,10 +185,6 @@ textarea{
 
 a{
   text-decoration: none;
-}
-
-li{
-  list-style: none;
 }
 
 section{
