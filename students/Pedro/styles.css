@@ -33,16 +33,18 @@ header p {
 }
 
 .nav-bar ul li {
-  text-decoration: none;
   text-align: center;
   display: table-cell;
   list-style-type: none;
   font-size: 1rem;
   float: left;
   width: 33%;
-  color: white
 }
 
+.nav-bar a {
+  text-decoration: none;
+  color: white
+}
 .clearfix {
   clear: both;
 }
