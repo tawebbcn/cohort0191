@@ -96,8 +96,16 @@ section.testimonials .button {
   margin-top: 5rem;
 }
 
+.home-logo{
+  position: absolute; 
+  top:0;
+  left:0;
+  margin-left:1rem;
+  margin-top:1rem;
+}
 .my_image{
   width:15%;
+  min-width:120px;
 }
 .my_image img{
   width: 100%;
