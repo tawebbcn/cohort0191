@@ -127,14 +127,15 @@ html{
   align-items: center;
   justify-content: center;
   background-image: url(./rawpixel-487106-unsplash.jpg);
-  background-size: contain;
-  height: 10rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
   width: 25%;
   margin: 2%;
 }
 
 .list-link{
-  padding: 5rem 50% 5rem 50%;
+  padding: 10rem 50% 10rem 50%;
 }
 
 /* Footer */
