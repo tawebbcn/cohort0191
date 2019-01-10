@@ -7,6 +7,8 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.clearfix { clear: both;}
+
 /* ---header--- */
 
 header {
@@ -17,6 +19,14 @@ header {
 
 .top {
   padding-bottom: 20px;
+}
+
+.title {
+  float: left;
+}
+
+.menu {
+  margin: 0;
 }
 
 header h1 {
@@ -44,7 +54,6 @@ header li {
 /* ---main--- */
 
 .section-container {
-
   margin: 0 10%;
 }
 
