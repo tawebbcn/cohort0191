@@ -98,6 +98,10 @@ footer{
   float: right;
 }
 
+.follow-me svg {
+  fill: white;
+}
+
 .bottom-word{
   margin: 0;
   padding: 9px 5%;
