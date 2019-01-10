@@ -17,6 +17,10 @@ header {
   text-align: center;
 }
 
+.menu-bar {
+  border-bottom: 1px solid white;ß
+}
+
 .top {
   padding-bottom: 20px;
 }
@@ -28,6 +32,16 @@ header {
 
 .menu {
   margin: 0;
+}
+
+.menu-list {
+  margin: 0;
+}
+
+.menu-list a {
+  color: white;
+  text-decoration: none;
+  display: block;
 }
 
 header h1 {
@@ -45,6 +59,7 @@ header p {
 header li {
   display: inline;
   float: right;
+  padding: 19.5px 10px;
 }
 
 .profile-photo {
