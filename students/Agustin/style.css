@@ -120,7 +120,8 @@ section.testimonials .button {
   text-align: center;
 }
 #about-me h3{
-  color:#ff4d4d;
+    color:#bc007b;
+  
 }
 #about-me p{
   margin:0 1rem;
@@ -131,7 +132,7 @@ hr{
  
     height: 1px;
     border: 0;
-    border-top: 1px solid #ff4d4d;
+    border-top: 1px solid #bc007b;
      
 }
 #contact-me{
