@@ -31,6 +31,11 @@ header p {
   font-size:1.5rem;
 }
 
+header li {
+  display: inline;
+  float: right;
+}
+
 .profile-photo {
   width: 80%;
   max-width: 300px;
