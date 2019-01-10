@@ -9,55 +9,55 @@ body {
 
 /* ---header--- */
 
-header{
+header {
   background-color:#343434;
   color:white;
   text-align: center;
 }
 
-.top{
+.top {
   padding-bottom: 20px;
 }
 
-header h1{
+header h1 {
   font-family: 'Montserrat', sans-serif;
   padding-top: 10px;
   margin: 0;
   font-size: 2rem;
 }
 
-header p{
+header p {
   text-transform: capitalize;
   font-size:1.5rem;
 }
 
-.profile-photo{
+.profile-photo {
   width: 80%;
   max-width: 300px;
 }
 
 /* ---main--- */
 
-.section-container{
+.section-container {
 
   margin: 0 10%;
 }
 
-.exercise-img{
+.exercise-img {
   width: 100%;
 }
 
-.about-me-section{
+.about-me-section {
 
 }
 
-.exercises-section{
+.exercises-section {
 
 }
 
 /* ---footer--- */
 
-#comment{
+#comment {
   border: 1px solid gray;
   display: block;
   height:5rem;
@@ -66,35 +66,35 @@ header p{
   font-family:  'Montserrat', sans-serif;
 }
 
-footer{
+footer {
   color:white;
   background-color: #343434;
 }
 
-.comment-footer{
+.comment-footer {
   padding-top:10px;
 }
 
-.comment-footer h2{
+.comment-footer h2 {
   padding: 10px 0;
   margin: 0;
 }
 
-.submit-btn{
+.submit-btn {
   background-color: gray;
   color:white;
   border: 1px solid gray;
   margin-top: 5px;
 }
 
-.bottom{
+.bottom {
   padding-top: 4px;
   border-top: 1px solid;
   margin-top: 10px;
 }
 
 
-.follow-me{
+.follow-me {
   float: right;
 }
 
@@ -102,12 +102,12 @@ footer{
   fill: white;
 }
 
-.bottom-word{
+.bottom-word {
   margin: 0;
   padding: 9px 5%;
 }
 
-.bottom-word p{
+.bottom-word p {
   margin:0px
   
 }
