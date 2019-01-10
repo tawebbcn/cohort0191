@@ -1,0 +1,192 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+li{
+  list-style: none;
+}
+
+/* ---- typography ---- */
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #2A4747;
+}
+
+.main h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+p{
+  font-size: 1.1rem;
+}
+
+/* ---- layout ---- */
+
+/* html */
+
+html{
+  max-width: 95%;
+  margin: 0 auto;
+  background-color: #EFF1ED;
+}
+
+/* Navbar */
+
+.navbar{
+  height: 4rem;
+  font-size: 2rem;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.home-link{
+  line-height: 4rem;
+  color: #3891A6;
+}
+
+.header-container{
+  background-color: #3891A6;
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  height: 15rem;
+  max-width: 95%;
+  margin: auto 2.5%;
+}
+
+.title-container{
+  padding-left: 3rem;
+  color: #C0E0DE;
+}
+
+.subtitle{
+  padding-left: 10rem;
+  color: #E8C547;
+}
+
+.image-container{
+  background-image:
+    linear-gradient(black,black), 
+    url("./Personalphoto.jpeg");
+  background-blend-mode: saturation;
+  background-size: cover;
+  border-radius: 50%;
+  height: 12rem;
+  width: 12rem;
+  margin: auto 0;
+}
+
+/* Main section */
+
+.main-section{
+  text-align: center;
+  width: 50%;
+  margin-left: 40%;
+}
+
+.description{
+  background-color: #3891A6;
+  padding: 1rem;
+}
+
+.description{
+  line-height: 1.5;
+  color: #C0E0DE;
+}
+
+/* Exercises section */
+
+.exercises-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.list-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./rawpixel-487106-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20rem;
+  width: 25%;
+  margin: 2%;
+}
+
+.list-link{
+  padding: 10rem 100% 10rem 100%;
+}
+
+/* Footer */
+
+.footer{
+  display: flex;
+  align-items: center;
+  background-color: #3891A6;
+  max-width: 95%;
+  margin: 0 auto;
+  height: 15rem;
+  padding-left: 2rem; 
+}
+
+.footer-title{
+  color: #E8C547;
+  align-self: flex-start;
+}
+
+.form{
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+
+textarea{
+  outline: none;
+  resize: none;
+  overflow: auto;
+  height: 10rem;
+  width: 20rem;
+}
+
+::-webkit-input-placeholder { /* Webkit */
+  line-height:9.5rem;
+  text-align: center;
+}
+
+.footer-button{
+  color: #3891A6;
+  border: none;
+  background-color: #E8C547;
+  height: 2rem;
+  width: 4rem;
+  font-size: 1rem;
+  align-self: flex-end;
+  margin-left: 1%;
+}
+
+/* ---- components ---- */
+
+a{
+  text-decoration: none;
+}
+
+section{
+  margin: 4rem auto;
+}
