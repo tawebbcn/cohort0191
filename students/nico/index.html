@@ -16,11 +16,11 @@
 <body>
   <header class="header-container">
     <a href="https://tawebbcn.github.io/cohort0191"><img class="header-container-item" src="img/left-arrow.png" alt="back-arrow"></a>
-    <nav class="header-container-item">
-      <ul class="nav-list-container">
-        <li class="nav-list-items"><a href="#about"/>Me</a></li>
-        <li class="nav-list-items"><a href="#portfolio">Portfolio</a></li>
-        <li class="nav-list-items"><a href="#contact">Contact</a></li>
+    <nav class="nav-container">
+      <ul>
+        <li><a href="#about"/>Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -44,7 +44,7 @@
       </section>
       <section id="portfolio" class="section-container portfolio">
         <h3>Portfolio</h3>
-        <ul class="portolio-item-container">
+        <ul class="portfolio-item-container">
           <li class="portfolio-item"><a href="#">Create a webpage</a></li>
           <li class="portfolio-item"><a href="#">Clone Slack</a></li>
           <li class="portfolio-item"><a href="#">Functions scope</a></li>
@@ -53,9 +53,11 @@
       <section id="contact" class="section-container">
         <h3>Contact me</h3>
         <form action=""> 
-          <label for="comment">Type your message</label>
-            <textarea id="comment" rows="5" cols="50" placeholder="Leave a message"></textarea> <br>
-            <input class="submit-btn" type="submit" value="Submit">
+          <div class="label-container"><label for="comment">Type your message</label></div> 
+          <textarea id="comment" placeholder="Leave a message"></textarea> 
+          <div class="form-btn">
+              <input class="submit-btn" type="submit" value="Submit">
+          </div>
         </form>
       </section>
   </main>

@@ -49,7 +49,7 @@ h3 {
   align-items: center;
 }
 
-.nav-list-container {
+.nav-container ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -63,12 +63,12 @@ h3 {
 }
 
 /* ---- components ---- */
-.nav-list-container li {
+.nav-container ul li {
   list-style: none;
-  margin: 5px;
+  margin: 0 5px;
 }
 
-.nav-list-container li>a {
+.nav-container ul li>a {
   text-decoration: none;
   list-style: none;
   color: #011638;
@@ -81,10 +81,20 @@ h3 {
   margin-left: 20px;
 }
 
+.label-container {
+  margin-bottom: 5px;
+}
+
 .section-container textarea {
   margin-top: 10px;
   border: 1px solid #141414;
   width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.form-btn {
+  text-align: center;
 }
 
 .submit-btn {
@@ -93,16 +103,15 @@ h3 {
   color: #EEF0F2;
   padding: 5px;
   font-size: 1rem;
-  border-radius: 5%;
+  border-radius: 4px;
   text-align: center;
-  position: relative;
-  left:33%;
+  margin-top: 5px;
 }
 
 
 /* ---- section ---- */
 .intro {
-  background: url("../myPersoPage/img/georgie-cobbs-467923-unsplash.jpg") no-repeat center center;
+  background: url("img/georgie-cobbs-467923-unsplash.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
 }
@@ -152,11 +161,12 @@ h3 {
   display: flex;
   flex-direction: column;
   background: #EEC643;
+
 }
 
 .portfolio-item-container {
-  display: flex;
-  flex-direction: column;
+  padding-left: 0;
+  align-self: center;
 }
 
 .portfolio-item {
@@ -166,7 +176,7 @@ h3 {
   margin-bottom: 10px;
   padding: 10px;
   text-align: center;
-  border-radius: 2%;
+  border-radius: 4px;
 }
 
 .portfolio-item a {
@@ -183,5 +193,25 @@ footer {
 
 footer p {
   margin: 10px 20px;
-  
+  padding-top: 10px;
 }
+
+@media (min-width: 768px) {
+
+  .section-container textarea {
+    width: 300px;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  form label {
+    text-align: left;
+  }
+
+  .nav-container ul li:hover {
+    border: 1px solid #011638;
+    border-radius: 4px;
+  }
+} 
