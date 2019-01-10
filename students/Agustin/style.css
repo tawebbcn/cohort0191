@@ -75,7 +75,9 @@ body {
   color: blue;
   background-color: #fff;
 }
-
+a{
+  color:#bc007b;
+}
 /* ---- section ---- */
 
 section.testimonials {
@@ -143,6 +145,4 @@ hr{
   list-style: none;
   padding:0;
 }
-.icon-links a{
-  color:#ff4d4d;
-}
+ 
