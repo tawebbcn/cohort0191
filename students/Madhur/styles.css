@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  background-color:white;
   margin: 0;
   padding: 0;
 }
@@ -24,23 +25,121 @@ body {
 
 h1 {
   font-weight: normal;
-  color: red;
-  font-size: 1rem;
-  text-transform: uppercase
-
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
-h2 {}
-
-h3 {}
+h2 {
+  font-weight: normal;
+  font-size: 1.2rem;
+  font-weight: bolder
+}
 
 p {
   margin: 0;
 }
 
+.name {
+  background-color: rgb(48, 47, 47);
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  max-width: 1024px;
+  padding: 50px 0 20px;
+
+}
+#laptopimage{
+  max-width: 60px;
+}
+
+.row1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  max-width: 300px;
+}
+ 
 
 
-/* ---- layout ---- */
+.list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  list-style: none;
+  }
+
+
+
+.container2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  max-width:;
+}
+#text1{
+  max-width: 460px;
+}
+
+.container3{
+    background-color: rgb(48, 47, 47);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    max-width: 1024px;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+
+}
+
+.list2{
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.box3{
+justify-content: flex-start
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---- layout ---- 
 
 #site-header {
   padding: 30px 0;
@@ -77,7 +176,7 @@ p {
 
 
 
-/* ---- components ---- */
+/* ---- components ---- 
 
 .button {
   width: 100%;
@@ -91,7 +190,7 @@ p {
   background-color: #fff;
 }
 
-/* ---- section ---- */
+/* ---- section ---- *
 
 section.testimonials {
   // ...
@@ -113,3 +212,4 @@ section.testimonials .button {
   list-style: 
   
 }
+*//
