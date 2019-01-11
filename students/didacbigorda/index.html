@@ -10,31 +10,78 @@
   <meta property="og:description" content="This is Didac Bigorda's personal page">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="styles/....">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body itemscope itemtype="https://schema.org/Person">
   <header>
-    <h1>Dídac Bigordà Arruego</h1>
-    <h2>Frontend Developer</h2>
+    <nav class="top-nav">
+      <div class="nav-div">
+        <h1>Dídac Bigordà</h1>
+        <h2>Frontend Developer</h2>
+        <a href="https://tawebbcn.github.io/cohort0191/#">HOME</a>
+      </div>
+    </nav>
   </header>
   <main>
-    <section>
-      <img src="didac.jpg" alt="picture of Didac">
-    </section>
-    <section>
-      <h2>About me</h2>
-      <p>Hi, I'm Dìdac. I'm a web developer and professional top shelf reacher.</p>
-    </section>
-    <section>
-      <h2>Exercises</h2>
+    <section class="first-section">
+      <h1>
+        I'm Dídac, a web developer from Barcelona
+      </h1>
+      <h2>
+        (I come in bearded and unbearded varieties)
+      </h2>
       <ul>
-        <li>Bla</li>
-        <li>Bla</li>
-        <li>Bla</li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#exercises">Exercises</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#comments">Comments</a></li>
       </ul>
     </section>
-    <section>
+    <section class="image-section">
+      <img src="didac.jpg" alt="picture of Didac">
+    </section>
+    <section id="about-me" class="second-section">
+      <h2>About me</h2>
+      <p>Hi, I'm Dídac. I'm a web developer and amateur top shelf reacher. I once ate too many croquettes on a dare. It is my most humbling experience.</p>
+    </section>
+    <section id="exercises" class="third-section">
+      <h2>Exercises</h2>
+      <div class="third-section-div">
+        <div>
+          <a href="#">
+            <img src="http://lorempixel.com/100/100" alt="Exercise 1">
+            <p>Potato</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="http://lorempixel.com/100/100" alt="Exercise 2">
+            <p>Cucumber</p>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <img src="http://lorempixel.com/100/100" alt="Exercise 3">
+            <p>Capsicum</p>    
+          </a>
+        </div>
+      </div> 
+    </section>
+    <div class="clearfix"></div>
+    <section id="testimonials" class="fourth-section">
+      <h2>Testimonials</h2>
+      <div class="testimonials">
+        <span>"I was promised free pizza." - Sister</span>
+      </div>
+      <div class="testimonials">
+        <span>"Who?" - Dad</span>
+      </div>
+      <div class="testimonials">
+        <span>"Tofu House" - Molly Dunn</span>
+      </div>
+    </section>
+    <section id="comments" class="fifth-section">
       <h2>Comment</h2>
       <form action="">
         <label for="comment">Leave a comment</label>
