@@ -145,6 +145,13 @@ header div {
   margin-left: 4rem;
 }
 
+.fifth-section form label, .fifth-section form textarea, .fifth-section form input {
+  position: relative;
+  float: left;
+  display: block;
+  width: 90%
+}
+
 .clearfix {
   clear: both;
 }
