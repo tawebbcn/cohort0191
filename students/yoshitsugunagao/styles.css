@@ -5,6 +5,7 @@ body {
   padding: 0;
   /* background-color: powderblue; */
   font-family: 'Montserrat', sans-serif;
+  background-color: #343434;
 }
 
 .clearfix { clear: both;}
@@ -12,13 +13,12 @@ body {
 /* ---header--- */
 
 header {
-  background-color:#343434;
   color:white;
   text-align: center;
 }
 
 .menu-bar {
-  border-bottom: 1px solid white;ß
+  border-bottom: 1px solid white;
 }
 
 .top {
@@ -71,6 +71,11 @@ header li {
 
 .section-container {
   margin: 0 10%;
+  color: white;
+}
+
+.section-border {
+  border-bottom: 1px solid white;
 }
 
 .exercise-img {
@@ -78,11 +83,16 @@ header li {
 }
 
 .about-me-section {
-
+  
 }
 
-.exercises-section {
+.exercises-section a {
+  text-decoration: none;
+  color:white;
+}
 
+.exercises-section li {
+  list-style: none;
 }
 
 /* ---footer--- */
@@ -98,7 +108,6 @@ header li {
 
 footer {
   color:white;
-  background-color: #343434;
 }
 
 .comment-footer {
