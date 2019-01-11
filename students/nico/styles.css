@@ -1,0 +1,217 @@
+
+/* ---- reset ---- */
+
+* {
+  /* border: 1px solid black; */
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+/* ---- typography ---- */
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  color: #011638;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.center-box-side p {
+  height: 100%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  
+}
+
+/* ---- layout ---- */
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.nav-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* ---- components ---- */
+.nav-container ul li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.nav-container ul li>a {
+  text-decoration: none;
+  list-style: none;
+  color: #011638;
+  text-transform: uppercase;
+}
+
+.header-container img {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 20px;
+}
+
+.label-container {
+  margin-bottom: 5px;
+}
+
+.section-container textarea {
+  margin-top: 10px;
+  border: 1px solid #141414;
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.form-btn {
+  text-align: center;
+}
+
+.submit-btn {
+  width: 100px;
+  background: #0D21A1;
+  color: #EEF0F2;
+  padding: 5px;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+/* ---- section ---- */
+.intro {
+  background: url("img/georgie-cobbs-467923-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+}
+
+.center-box {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 2%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.center-box-side {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+
+.center-box-side:first-child {
+  background: #EEF0F2;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
+}
+
+.center-box-side:last-child {
+  background: #141414;
+  color: #EEF0F2;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+.section-container {
+  margin: 10px 20px;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  background: #EEC643;
+
+}
+
+.portfolio-item-container {
+  padding-left: 0;
+  align-self: center;
+}
+
+.portfolio-item {
+  width: 200px;
+  list-style: none;
+  background: #141414;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+  color: #EEF0F2;
+}
+
+footer {
+  background: #141414;
+  color: #EEF0F2;
+  text-align: center;
+  height: 100%;
+}
+
+footer p {
+  margin: 10px 20px;
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+
+  .section-container textarea {
+    width: 300px;
+  }
+
+  form {
+    text-align: center;
+  }
+
+  form label {
+    text-align: left;
+  }
+
+  .nav-container ul li:hover {
+    border: 1px solid #011638;
+    border-radius: 4px;
+  }
+} 
