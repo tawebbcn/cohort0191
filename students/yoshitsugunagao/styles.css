@@ -34,11 +34,8 @@ header {
   .top {
     justify-content: space-between;
     flex-direction: row;
-
   }
 }
-
-
 
 .title {
   float: left;
@@ -46,7 +43,6 @@ header {
 }
 
 .menu {
-  margin: 0;
 }
 
 .menu-list {
@@ -63,6 +59,13 @@ header {
 }
 
 header h1 {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  margin: 0;
+  font-size: 2rem;
+}
+
+header h2 {
   font-family: 'Montserrat', sans-serif;
   padding-top: 10px;
   margin: 0;
@@ -117,8 +120,6 @@ header li {
 
 }
 
-
-
 .exercises-section p {
   text-align: center;
   margin: 0px;
@@ -126,7 +127,7 @@ header li {
   padding-bottom: 10px;
 }
 
-.exercises-section h2 {
+.exercises-section h3 {
   height: 100%;
 }
 
@@ -157,14 +158,11 @@ header li {
   font-family:  'Montserrat', sans-serif;
 }
 
-
-
 @media(min-width:400px) {
   #comment {
   width: 320px;
   }
 }
-
 
 footer {
 }
