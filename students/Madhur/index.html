@@ -5,59 +5,74 @@
   <title>My personal page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-
+  <link rel="stylesheet" href="mypersonalpage.css">
 </head>
-
 <body>
-  <header class="name">
-    <div class="column1">
-      <h1>Madhur Suria Mata Garcia</h1>
-      <div class="row1">
-        <img id="laptopimage" src="laptop.png" alt="logo_laptop">
-        <p>Frontend Developer</p>
-      </div>
-      </div>
-    <div class="column2">
-      <img src="porfile.jpg" height="300" alt="Madhur photo">
-    </div>
-  </header>
-  
-  <main class="container1">
-  
-  <nav class="navbar">
-      <ul class="list">
-        <li></li><button class="buton1" type="Submit" value="About me"><a href="#">About me</a></button>
-        <li></li><button type="Submit" value="My work"><a href="#">My work</a></button>
-        <li></li><button type="Submit" value="My hobbies"><a href="#">My hobbies</a></button>
-      </ul>
-  </nav>
-  <section class="container2">
-      <div>
-        <h2 id="header1">About me</h2>
-         <p id="text1">I am a frontend developer with also civil engineering background. I can build your business from the foundations to the website. When I am not developing you can find me surfing</p>
-      </div>
-      <div class="box2">
-        <h2>Exercises</h2>
-        <ul class="list2">
-          <li>Mars Kata</li>
-          <li>Duplex 4 dorm</li>
-          <li>My personal website</li>
-        </ul>
-      </div>
-  </section>
-  </main>
-
-  <footer class="container3">
-    <div class="box3">
-      <h2>Comment</h2>
-      <textarea rows="8" cols="100"></textarea>
-      <br>
-      <button type="Submit" value="Submit">Submit</button>
+  <header>
+    <div class="logo">
+        <a href="#"><img id="laptopimage" src="images/laptop.svg" alt="logo_laptop"></a>
     </div>
     <div>
-      <img src="surfing.jpg" alt="madhur surfing" height="300">
+      <ul class="bar">
+        <li><img id="image-phone" src="images/mobilephone.svg" alt="image mobile phone"> (+34) 644 813 829</li>
+        <li><img id="image-envelope" src="images/envelope.png" alt="image envelope">madhurmata@gmail.com</li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="grid">
+      <article class="column1">
+        <div class="box1-column1"><h2><a href="#">Software Developer</a></h2></div>
+        <div class="box2-column1"><h2><a href="#">Civil Engineer</a></h2></div>
+        <div class="box3-column1"><h2><a href="#">Personal Projects</a></h2></div>
+        <div class="box4-column1"><h2><a href="#">Hobies</a></h2></div>
+      </article>
+      <div class="column2">
+        <section class="top-section">
+          <div class="porfileimagen">
+              <img src="images/porfile.jpg" alt="Madhur photo">
+          </div>
+          <div class="name">
+              <h1>Madhur Mata</h1>
+              <p>Frontend Developer</p>
+          </div>
+        </section>
+        <section class="bottom-section">
+          <div>
+            <div id="title1">
+              <h2 >About me</h2>
+            </div>
+            <p>Frontend developer & Civil Engineer. Environmentalist, founder of Save the Ocean. Goals in life: use the tech to make a better world.</p>
+          </div>
+          <div class="padding-top-title2">
+            <div id="title2">
+              <h2>Values</h2>
+            </div>
+            <ul class="list2">
+              <li>Professionalism</li>
+              <li>Respect</li>
+              <li>Share & Help</li>
+            </ul>
+          </div>
+        </section >
+      </div>
+    </div>
+  </main>  
+  <footer>
+    <div class="footer">
+      <div class="title3">
+        <h2>Comment</h2>
+      </div>
+      <div class="box">
+        <div>
+          <textarea rows="2" cols="15" placeholder="Remember to be nice"></textarea>
+        </div>
+        <div>
+         <button class="button" type="Submit" value="Submit">Submit</button>
+        </div>
+      </div>
     </div>
   </footer>
 </body>

@@ -1,0 +1,267 @@
+/* ---- reset ---- */
+
+html {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+  max-width: 1440px;
+  background-color: rgb(48, 47, 47);
+  padding: 15px;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 0;
+  line-height: 0;
+  letter-spacing: 1px;
+}
+h2 {
+  font-size: inherit;
+}
+p {
+  margin: 0;
+}
+
+header{
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  padding: 10px 10px;
+  justify-content: space-around;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+ 
+}
+
+.logo{
+  width: 50px;
+}
+#laptopimage{
+  display: block;
+  width: 60px;
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #laptopimage{
+    right: 80%; 
+  }
+  .bar{
+    position: relative;
+      left: 40%; 
+  }
+}
+@media (min-width: 1366px) {
+  #laptopimage{
+    right: 207%; 
+  }
+  .bar{
+    position: relative;
+      left: 100%; 
+  }
+}
+
+.bar{
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+
+#image-phone{
+  padding-right: 5px;
+  max-width: 20px;
+}
+#image-envelope{
+  padding-right: 5px;
+  max-width: 20px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+@media (min-width: 1366px) {
+  .grid{
+    padding: 5% 10% 5
+  }
+}
+.column1{
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .column1{
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30% 0;
+  justify-content: space-around;
+  }
+}
+
+.box1-column1{
+  background-color: dimgrey;
+  border: 3px ridge rgb(218, 203, 203);
+  max-width: 105px;
+  max-height: 105px;
+  width: 105px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box1-column1:hover {
+  background-image: url("images/webdeveloper.jpg");
+  background-position: center center;
+  background-size: cover;
+    
+}
+.box1-column1 a{
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+.box2-column1{
+  background-color: dimgrey;
+  border: 3px ridge rgb(218, 203, 203);
+  width: 105px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box2-column1 a{
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+}
+.box2-column1:hover{
+  background-image: url("images/civilengineer.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+.box3-column1{
+  background-color: dimgrey;
+  border: 3px ridge rgb(218, 203, 203);
+  width: 105px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box3-column1:hover{
+  background-image: url("images/personalprojects.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.box3-column1 a{
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+}
+.box4-column1{
+  background-color: dimgrey;
+  border: 3px ridge rgb(218, 203, 203);
+  width: 105px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box4-column1:hover{
+  background-image: url("images/hobies.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.box4-column1 a{
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+}
+
+
+.column2{
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1366px) {
+  .column2{
+   flex-direction: row;  
+  }
+  .name h1{
+    letter-spacing: 0;
+  }
+}
+
+.top-section{
+  text-align: center;
+}
+.porfileimagen img{
+  max-width: 200px;
+}
+.name{
+margin: 0;
+padding: 0;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .name h1{
+    letter-spacing: 0;
+  }
+}
+
+.bottom-section{
+  background-color: #rgb(48, 47, 47);
+  padding: 20px 20px 5px 20px;
+}
+
+#title1{
+  border-bottom: 2px solid cornflowerblue;
+  line-height: 0;
+}
+#title2{
+  border-bottom: 2px solid cornflowerblue;
+  line-height: 0;
+}
+
+.padding-top-title2{
+  padding-top: 10px;
+}
+.list2{
+  padding-left: 20px;
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.title3{
+  font-size: 1rem;
+}
+
+
+.button{
+background-color: white;
+font-size: 0.8rem;
+margin-left: 20px;
+}
