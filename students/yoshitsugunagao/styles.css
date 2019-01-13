@@ -91,9 +91,43 @@ header li {
   color:white;
 }
 
+.exercises-section ul {
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 10%;
+  /* padding: 75px 0; */
+}
+
+.item {
+
+}
+
+
+
 .exercises-section li {
   list-style: none;
+  text-align: center;
 }
+
+.exercises-section h2 {
+  height: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid white;
+}
+
 
 /* ---footer--- */
 
