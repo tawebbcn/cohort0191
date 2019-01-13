@@ -1,11 +1,15 @@
-
+@import "compass/css3";
 
 body {
   margin: 0;
   padding: 0;
-  /* background-color: powderblue; */
   font-family: 'Montserrat', sans-serif;
   background-color: #343434;
+  color: white ;
+}
+
+a {
+  color:white;
 }
 
 .clearfix { clear: both;}
@@ -13,17 +17,28 @@ body {
 /* ---header--- */
 
 header {
-  color:white;
   text-align: center;
 }
 
-.menu-bar {
+.full-bar {
   border-bottom: 1px solid white;
 }
 
 .top {
-  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
+@media(min-width:650px) {
+  .top {
+    justify-content: space-between;
+    flex-direction: row;
+
+  }
+}
+
+
 
 .title {
   float: left;
@@ -36,12 +51,15 @@ header {
 
 .menu-list {
   margin: 0;
+  padding:0;
+  list-style: none;
+  display: flex;
 }
 
 .menu-list a {
-  color: white;
   text-decoration: none;
   display: block;
+  padding: 1em;
 }
 
 header h1 {
@@ -57,9 +75,6 @@ header p {
 }
 
 header li {
-  display: inline;
-  float: right;
-  padding: 19.5px 10px;
 }
 
 .profile-photo {
@@ -71,7 +86,6 @@ header li {
 
 .section-container {
   margin: 0 10%;
-  color: white;
 }
 
 .section-border {
@@ -79,7 +93,7 @@ header li {
 }
 
 .exercise-img {
-  width: 100%;
+  width: 200px;
 }
 
 .about-me-section {
@@ -88,7 +102,6 @@ header li {
 
 .exercises-section a {
   text-decoration: none;
-  color:white;
 }
 
 .exercises-section ul {
@@ -98,7 +111,6 @@ header li {
 .container {
   width: 80%;
   margin: 0 10%;
-  /* padding: 75px 0; */
 }
 
 .item {
@@ -107,9 +119,11 @@ header li {
 
 
 
-.exercises-section li {
-  list-style: none;
+.exercises-section p {
   text-align: center;
+  margin: 0px;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
 }
 
 .exercises-section h2 {
@@ -124,10 +138,14 @@ header li {
 
 .card {
   width: 200px;
-  height: 300px;
+  padding: 10px 15px;
+  margin: 0px 10px 20px;
   border: 1px solid white;
 }
 
+.exercise-name {
+
+}
 
 /* ---footer--- */
 
@@ -135,13 +153,20 @@ header li {
   border: 1px solid gray;
   display: block;
   height:5rem;
-  width: 50%;
-  min-width: 250px;
+  width: 100%;
   font-family:  'Montserrat', sans-serif;
 }
 
+
+
+@media(min-width:400px) {
+  #comment {
+  width: 320px;
+  }
+}
+
+
 footer {
-  color:white;
 }
 
 .comment-footer {
@@ -155,7 +180,6 @@ footer {
 
 .submit-btn {
   background-color: gray;
-  color:white;
   border: 1px solid gray;
   margin-top: 5px;
 }
