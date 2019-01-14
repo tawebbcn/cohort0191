@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto Mono', monospace;
 }
 /*Section1*/
@@ -14,10 +16,25 @@ body {
   font-size: 3rem;
   line-height: 150%;
 }
+
+@media (max-width: 375px) {
+  .section1 h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    line-height: 150%;
+    padding-bottom: 75%;
+  }
+}
+
 .section1 img {
   height: 150%;
   width: 100%;
 }
+
 /*Section2*/
 .section2 {
   display: flex;
@@ -33,22 +50,28 @@ body {
   padding-top: 10%;
 }
 .section2 p {
-  margin-top: 7.5%;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin: 5%;
 }
 
 .section2 img{
-  display: block;
   margin-right: 5%;
   margin-left: 5%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  width: 20%;
-  height: 30%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  height: 50%;
+  width: 45%;
   border-radius: 200px;
 }
-
+@media (max-width: 375px) {
+  .section2 {
+    display: inline;
+    background: #f8f9fa;
+  }
+  .section2 img {
+    display: inline;
+    text-align: center;
+  }
+}
 /*Section3*/
 .section3 {
   text-align: center;
@@ -58,24 +81,51 @@ body {
 .section3 h2 {
   padding: 2.5% ;
 }
+.section3 ul {
+  padding: 0;
+}
 .section3 li {
   list-style: none;
   background: white;
   font-weight: bold;
   padding: 1%;
   border: 1px solid black;
-  margin: .5% 2.5%;
+  margin: 1%;
   border-radius: 30px;
 }
+.section3 a {
+  color: black;
+}
+.portfolio-div {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-div p {
+  padding: 2.5%;
+}
+.portfolio-div h3 {
+  padding: 2.5%;
+}
+.portfolio-div div {
+  margin: 1%;
+  box-shadow: 0 0 2rem rgba(0,0,0,.1);
+  border-radius: 25px;
+}
+.portfolio-div img {
+  width: 100%;
+}
 
+@media (max-width: 375px) {
+  .portfolio-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
 /*Footer*/
 footer {
   padding:2.5%;
   background: #f8f9fa;
   text-align: center;
-}
-textarea {
-  border-radius: 15px;
 }
 footer h2 {
   margin-bottom: 2.5%;
