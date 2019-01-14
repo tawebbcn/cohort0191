@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(144, 226, 234, 1);
+  font-family: Roboto, sans-serif
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase
+}
+
+header p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.nav-bar {
+  background-color: rgba(15, 66, 77, 1);
+  height: 3rem;
+  margin: 0;
+  width: 100%;
+  padding: 1rem auto;
+  text-decoration: none
+}
+
+.nav-bar ul li {
+  text-align: center;
+  display: table-cell;
+  list-style-type: none;
+  font-size: 1rem;
+  float: left;
+  width: 33%;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white
+}
+.clearfix {
+  clear: both;
+}
+
+.picture {
+  min-width: 320px;
+  max-width: 100%;
+}
+
+.container {
+  text-align: center;
+  margin: 2rem 0
+}
+
+.container ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
