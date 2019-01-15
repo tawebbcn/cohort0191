@@ -1,60 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind|Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- OpenGraph info -->
+    <meta property="og:title" content="Matias personal page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="file:///home/mati/code/ironhack/module%201/day%201/html%20intro/index.html"
+    />
+    <meta
+      property="og:image"
+      content="file:///home/mati/code/ironhack/module%201/day%201/html%20intro/assets/20151026_124558.jpg"
+    />
+    <title>Matías' personal page</title>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Hind|Lato" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <!-- OpenGraph info -->
-  <meta property="og:title" content="Matias personal page">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="file:///home/mati/code/ironhack/module%201/day%201/html%20intro/index.html">
-  <meta property="og:image" content="file:///home/mati/code/ironhack/module%201/day%201/html%20intro/assets/20151026_124558.jpg">
-  <title>Matías' personal page</title>
-</head>
-
-<body>
-  <nav class="top-nav">
-    <ul class ="top-nav__list">
-      <li class="top-nav__item"><a href="#" class="top-nav__link">Home</a></li>
-      <li class="top-nav__item"><a href="#" class="top-nav__link">About me</a></li>
-      <li class="top-nav__item"><a href="#" class="top-nav__link">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header class="header">
-    <h1 class="heading-primary">Matías Ferreiro</h1>
-    <h2 class="heading-secondary">Web development student</h2>
-  </header>
-  
-  <main>
-    <section class="about-me">
-      <div class="about-me__content">
-        <h2 class="heading-secondary">About me</h2>
-        <ul class="about-me__list">
-          <li class="about-me__item">Web developer focused on front-end libraries like React</li>
-          <li class="about-me__item">You will always find me learning something new</li>
-          <li class="about-me__item">I have a Homer Simpson quote for any situation in life</li>
-        </ul>
-      </div>  
-      <img class="about-me__img" src="img/me.jpg" alt="Matias">
-    </section>
-    <section class="exercises">
-      <ul>
-        <li>The game</li>
-        <li>Backend web page</li>
-        <li>react web page</li>
+  <body>
+    <nav class="top-nav">
+      <ul class="top-nav__list">
+        <li class="top-nav__item">
+          <a href="#" class="top-nav__link">Home</a>
+        </li>
+        <li class="top-nav__item">
+          <a href="#" class="top-nav__link">About me</a>
+        </li>
+        <li class="top-nav__item">
+          <a href="#" class="top-nav__link">Contact</a>
+        </li>
       </ul>
-    </section>
-    <section class="comment">
+    </nav>
+
+    <header class="header">
+      <h1 class="heading-primary">Matías Ferreiro</h1>
+      <h2 class="heading-secondary">Web development student</h2>
+    </header>
+
+    <main>
+      <section class="about-me">
+        <div class="about-me__content">
+          <h2 class="heading-secondary">About me</h2>
+          <ul class="about-me__list">
+            <li class="about-me__item">
+              Web developer focused on front-end libraries like React
+            </li>
+            <li class="about-me__item">
+              You will always find me learning something new
+            </li>
+            <li class="about-me__item">
+              I have a Homer Simpson quote for any situation in life
+            </li>
+          </ul>
+        </div>
+        <img class="about-me__img" src="img/me.jpg" alt="Matias" />
+      </section>
+      <section class="exercises">
+        <h2 class="heading-secondary">Projects</h2>
+        <div class="projects">
+          <div class="project-box">
+            <div class="project-box__media">
+              <img
+                src="img/header-background.jpg"
+                class="img-placeholder"
+                alt=""
+              />
+            </div>
+            <div class="project-box__description">
+              <h3 class="heading-tertiary">The game</h3>
+              <p class="project-box__paragraph">Placeholder text</p>
+            </div>
+          </div>
+          <div class="project-box">
+            <div class="project-box__media">
+              <img
+                src="img/header-background.jpg"
+                class="img-placeholder"
+                alt=""
+              />
+            </div>
+            <div class="project-box__description">
+              <h3 class="heading-tertiary">The game</h3>
+            </div>
+          </div>
+          <div class="project-box">
+            <div class="project-box__media">
+              <img
+                src="img/header-background.jpg"
+                class="img-placeholder"
+                alt=""
+              />
+            </div>
+            <div class="project-box__description">
+              <h3 class="heading-tertiary">The game</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="comment">
         <h4>Comment</h4>
         <form action="#">
-          <textarea name="comment" cols="30" rows="10"></textarea>
-          <br />
+          <textarea name="comment" cols="30" rows="10"></textarea> <br />
           <button type="submit">Submit</button>
         </form>
       </section>
-  </main>
-</body>  
+    </main>
+  </body>
 </html>
