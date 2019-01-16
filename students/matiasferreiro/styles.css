@@ -1,0 +1,226 @@
+/* ---- vars ---- */
+:root {
+  --primary-color-light: rgb(49, 91, 139);
+  --primary-color: rgb(16, 29, 44);
+}
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+/* ---- Top nav ----*/
+.top-nav {
+  background-color: var(--primary-color);
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 0 2rem;
+}
+
+.top-nav__list {
+  width: 40%;
+  font-family: 'Hind', sans-serif;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav__item {
+  list-style: none;
+}
+
+.top-nav__link {
+  position: relative;
+  text-decoration: none;
+  color: #888;
+  transition: all .3s linear;
+}
+
+.top-nav__link::after {
+  content: "";
+  transition: 0.35s all ease;
+  backface-visibility: hidden;
+  position: absolute;
+  left: 50%;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+
+.top-nav__link:hover {
+  color: #fff;
+}
+.top-nav__link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .top-nav__list {
+    width: 70%;
+  }
+}
+
+/*----- Header -----*/
+.header {
+  height: 35vh;
+  background-image: linear-gradient(to right bottom, rgba(37, 69, 105, 0.8),rgba(16, 29, 44,0.8)), url(img/header-background.jpg); 
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #faf9f9
+}
+
+/* ----- About me ----- */
+.about-me {
+  height: 25rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1.6rem 0;
+  background-image: linear-gradient(105deg, 
+                                    rgba(16, 29, 44, .9) 0%,
+                                    rgba(16, 29, 44, .9) 55%,
+                                    #fff 55%);
+  color: #faf9f9;
+}
+
+@media(max-width: 900px) {
+  .about-me {
+    background-image: none;
+    color: #000;
+  }
+}
+.about-me__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  align-items: center;
+  color: currentColor;
+}
+.about-me__list {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about-me__item {
+  list-style-type: none;
+  font-size: 1.8rem;
+}
+
+@media(max-width: 450px) {
+  .about-me__item {
+    font-size: 1.6rem;
+  }
+}
+
+.about-me__img {
+  height: 18rem;
+  border-radius: 200px;
+}
+
+@media(max-width: 600px) {
+  .about-me__img {
+    display: none;
+  }
+}
+
+/* ----- Exercises -----*/
+
+.exercises {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+  margin: 1.6rem 0;
+}
+
+@media(max-width: 750px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-box {
+    width: 60%;
+  }
+} 
+.project-box {
+  flex-grow: 1;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.project-box__media {
+  flex-grow: 0.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(0 1%, 100% 0, 100% 85%, 0% 100%);
+  clip-path: polygon(0 1%, 100% 0, 100% 85%, 0% 100%);
+  background-color: var(--primary-color-light);
+}
+.img-placeholder {
+  max-height: 18rem;
+}
+.project-box__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project-box__paragraph {
+  margin-top: 1.6rem;
+}
+/* ----- Typography -----*/
+.heading-primary {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 3.5rem;
+  margin: 1rem 0;
+}
+
+.heading-secondary {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+.heading-tertiary {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #faf9f9;
+  background-color: var(--primary-color);
+  text-transform: uppercase;
+}
