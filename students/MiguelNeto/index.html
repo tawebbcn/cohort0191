@@ -2,24 +2,81 @@
 <html lang="en">
 
 <head>
-  <title>Hello, world!</title>
+  <title>Miguel Neto Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta property="og:title" content="Miguel Neto Page">
+  <meta property="og:property" content="profile">
+  <meta property="og:url" content="http://www.miguelneto.com/">
+  <meta property="og:image" content="https://nit.pt/wp-content/uploads/2018/08/fd5014cab115b944242b07ccc5d03c74-754x394.jpg">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <h1>Hello World</h1>
-    <nav>
-        <ul>
-            <li class="nav-button"><a href="#" >Home!</a></li>
-            <li class="nav-button"><a href="#" >About me</a></li>
-            <li class="nav-button"><a href="#" >Contact</a></li>
+<body itemscope itemtype="http://schema.org/Person">
+    <header>
+        <div class="flex">
+            <a href="#"><img src="home.png" alt="home" class="home-icon"></a>
+            <nav>
+                <ul class="list-nav">
+                    <il class="list-nav-item"><a href="#Areas-Interest">Areas Interest</a></il>
+                    <il class="list-nav-item"><a href="#about-me">About Me</a></il>
+                    <il class="list-nav-item"><a href="#Contacts">Contacts</a></il>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
 
-        </ul>
+    <main>
 
-    </nav>
+    <section id="intro">
+        <div class="container-intro">
+                <h1 itemprop="name" class="intro-title">Miguel Neto</h1>
+                <h4 itemprop="jobTitle" class="intro-subtitle">Web Developer, Financial Analyst and Entrepreneur</h2>
+                <div class="images-intro">
+                    <a href="http://www.linkedin.com/in/ribeironeto"><img src="linkedin.png" alt="linkedin" class="image-intro"></a>
+                    <a href="http://www.twitter.com"><img src="twitter.png" alt="twitter" class="image-intro"></a>
+                    <a href="http://www.facebook.com/"><img src="facebook.png" alt="facebook" class="image-intro"></a>
+                </div>
+        </div>
+    </section>
 
+    <section id="Areas-Interest">
+    
+            <article class="container-interest">
+                <h3>Developer</h3>
+            </article>
+            <article class="container-interest">
+                <h3>Financial Analyst</h3>
+
+            </article>
+            <article class="container-interest">
+                <h3>Entrepreneur</h3>
+
+            </article>
+        
+    </section>
+    
+    <section id="about-me">
+        <div class="about-me-text">
+            <h3>About me</h3>
+            <p itemprop="description"> Hi, I am Miguel and I am just starting Ironhack in Barcelona.</p>        
+        </div>
+        <div class="about-me-image">
+            <img src="miguel.jpg" alt="miguel-photo" class="miguel-photo">
+
+        </div>
+        <div class="clearfix"></div>
+
+    </section>
+
+    <footer id="Contacts">
+            <h3>Contacts</h3>
+            <h5>E-mail: miguelribeironeto@gmail.com</h3>
+
+    </footer>
+    </main>
+    
 </body>
 </html>
